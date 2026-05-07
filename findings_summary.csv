@@ -1,0 +1,8 @@
+check,severity,count,note
+Missing primary energy data (Site_EUI1),High,360,Buildings with no Site_EUI1 value are missing their core energy metric.
+Zero or negative Site_EUI1 value,High,5,A building reporting zero or negative energy use warrants investigation.
+Energy Star Score outside valid range (1-100),Medium,43,Energy Star scores must be between 1 and 100.
+Site_EUI1 and Site_EUI2 null mismatch,Medium,0,These columns are the same measurement in metric and imperial. Nulls should match.
+Data quality check passed but no date recorded,Low,0,A record marked as quality checked should always have a corresponding date.
+Energy data present but GHG emissions missing,Medium,0,Buildings with energy data should also have greenhouse gas emissions calculated.
+source usage lower than site usage,Medium,0,Buildings with source energy data lower than site data is almost definitely an error
